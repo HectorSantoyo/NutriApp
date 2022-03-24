@@ -1,2 +1,2 @@
 # NutriApp
-Web app to manage med appointments and patients.
+Web app to manage medical appointments and patients.
