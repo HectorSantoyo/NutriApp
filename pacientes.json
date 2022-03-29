@@ -1,0 +1,5 @@
+[
+    {"numero_de_paciente": "1111", "nombre": "Damian", "apellidos": "Alvarez", "telefono": "3333947431", "email": "damian@tuzos.com"},
+    {"numero_de_paciente": "1112", "nombre": "Miclo", "apellidos": "Belca", "telefono": "3318958765", "email": "miclo@vatoslocos.com"},
+    {"numero_de_paciente": "1113", "nombre": "Tommy", "apellidos": "Hilfigher", "telefono": "3355664411", "email": "tommy@th.com"}
+]

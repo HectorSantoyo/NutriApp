@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block encabezado %}Citas validados{% endblock %}
+{% block cuerpo %}
+    <h1> Listado de citas validados.</h1>
+    {% for registro in lista %}
+        <p/>
+        <ul>
+            {% for dato in registro %}
+                <li>
+                    {%cycle "Nombre" "Apellidos" "Fecha" "Hora" "Lugar" "id" as encabezado %}: 
+                    
+                    
+                        {{ dato }}
+                        
+                </li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
+{% endblock %}

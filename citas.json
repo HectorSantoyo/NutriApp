@@ -1,0 +1,8 @@
+[
+    {"nombre_paciente": "Damian", "apellidos": "Alvarez", "fecha": "2022-01-27", "hora": "12:00", "lugar": "Consultorio Jani"},
+    {"nombre_paciente": "Monica", "apellidos": "Naranjo", "fecha": "2022-05-14", "hora": "14:00", "lugar": "Tijera"},
+    {"nombre_paciente": "Hirving", "apellidos": "Lozano", "fecha": "2022-02-17", "hora": "15:00", "lugar": "Hospital Santa Ana"},
+    {"nombre_paciente": "Roger", "apellidos": "Waters", "fecha": "2022-03-21", "hora": "11:00", "lugar": "Consultorio Jani"},
+    {"nombre_paciente": "Elon", "apellidos": "Musk", "fecha": "2022-01-30", "hora": "09:00", "lugar": "Consultorio Jani"},
+    {"nombre_paciente": "Steve", "apellidos": "Jobs", "fecha": "2022-01-15", "hora": "10:00", "lugar": "Consultorio Jani"}
+]

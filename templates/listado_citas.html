@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block encabezado %}Listado de citas.{% endblock %}
+{% block cuerpo %}
+
+    <h1> Listado de citas.</h1>
+
+    {% if alta  %}
+    <div class="alert alert-success" role="alert">
+        {{ alta }} {{ id }}
+      </div>
+      {% endif %}
+    <br />
+
+    <form method="get" action="{% url 'test' %}">
+        {% csrf_token %}
+        <table>
+        <tr>
+          <td><input type="date" id="date" name="date"> <input type="submit" style="background-color: #eed1cd;" class="btn" value="Buscar" /></td>
+        </tr>
+        </table>
+        
+        </form>
+    
+        <p/>
+        <table class="table table-success table-striped table-hover">
+            <thead>
+                <tr>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Fecha</th>
+                <th>Hora</th>
+                <th>Lugar</th>
+                <th>id</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for registro in lista %}
+                <tr>
+                    {% for campo, dato in registro %}
+                    <td>{{ dato }}</td>
+                    {% endfor %}
+                </tr>
+            </tbody>
+            {% endfor %}
+        </table>
+    
+{% endblock %}

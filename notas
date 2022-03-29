@@ -1,0 +1,44 @@
+datos de paciente
+datos = {'nombre': 'Alejandro', 'apellidos': 'Sanz', 'telefono': 33647586, 'email': 'ale@sanz.com',}
+
+
+datos de cita
+datos = {'nombre_paciente': 'Maria', 'apellidos': 'Santoyo', 'fecha': '2022-03-13', 'hora': '16:00', 'lugar': 'Online',}
+
+
+<nav class="navbar navbar-expand navbar-light bg-light">
+    <div class="nav navbar-bar">
+        <a class="nav-item nav-link active" href="/api/">Inicio</a>
+        <a class="nav-item nav-link" href="/api/vista_pacientes">Pacientes</a>
+        <a class="nav-item nav-link" href="/api/vista_citas">Citas</a>
+    </div>
+</nav>
+
+
+<ul class="nav navbar-nav">
+    <li class="active"><a href="#">Homeee</a></li>
+    <li><a class="nav-item nav-link active" href="/api/">Inicio</a></li>
+    <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <span class="nav-label">Citas</span> <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="/api/vista_citas">Ver citas</a></li>
+            <li><a href="/api/alta_citas">Crear cita</a></li>
+        </ul>
+    </li>
+    <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <span class="nav-label">Pacientes</span> <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="/api/vista_pacientes">Ver pacientes</a></li>
+            <li><a href="/api/alta_pacientes">Crear paciente</a></li>
+        </ul>
+    </li>
+</ul>
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+          
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src=“assets/js/bootstrap-dropdown.js” type=“text/javascript”></script>
+<script src="assets/js/jquery.js" type="text/javascript"></script>

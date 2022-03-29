@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block encabezado %}Listado de Pacientes.{% endblock %}
+{% block cuerpo %}
+    <h1> Listado de Pacientes.</h1>{{ alta }} {{ id }}
+    <br />
+
+        <p/>
+        <table class="table table-success table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Telefono</th>
+                    <th>Email</th>
+                    <th>id</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for registro in lista %}
+                <tr>
+                    {% for campo, dato in registro %}
+                    <td>{{ dato }}</td>
+                    {% endfor %}
+                </tr>
+            </tbody>
+            {% endfor %}
+        </table>
+    
+{% endblock %}
